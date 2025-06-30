@@ -9,7 +9,13 @@ const config: Config = {
     "*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-  	extend: {
+    extend: {
+      fontFamily: {
+        din: ["dinneuzeitgroteskltw01-_812426", "sans-serif"],
+        helvetica: ["helvetica-w01-light", "sans-serif"],
+        proxima: ["proxima-n-w01-reg", "sans-serif"],
+        avenir: ["avenir-lt-w01_85-heavy1475544", "sans-serif"],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

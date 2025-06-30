@@ -1,9 +1,74 @@
+@font-face {
+  font-family: 'dinneuzeitgroteskltw01-_812426';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/dinneuzeitgroteskltw01-_812426.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'helvetica-w01-light';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/helvetica-w01-light.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'proxima-n-w01-reg';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/proxima-n-w01-reg.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'avenir-lt-w01_85-heavy1475544';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/avenir-lt-w01_85-heavy1475544.woff2') format('woff2');
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
+    --color_0: 255, 255, 255;
+    --color_1: 214, 0, 28;
+    --color_2: 214, 0, 28;
+    --color_3: 255, 6, 39;
+    --color_4: 247, 247, 247;
+    --color_5: 255, 255, 255;
+    --color_6: 255, 255, 255;
+    --color_7: 255, 181, 191;
+    --color_8: 255, 107, 126;
+    --color_9: 255, 33, 62;
+    --color_10: 214, 0, 28;
+    --color_11: 255, 255, 255;
+    --color_12: 255, 181, 191;
+    --color_13: 255, 107, 126;
+    --color_14: 255, 33, 62;
+    --color_15: 214, 0, 28;
+    --color_16: 255, 156, 169;
+    --color_17: 255, 58, 83;
+    --color_18: 214, 0, 28;
+    --color_19: 143, 0, 19;
+    --color_20: 71, 0, 9;
+    --color_21: 255, 205, 212;
+    --color_22: 255, 155, 169;
+    --color_23: 255, 106, 125;
+    --color_24: 255, 56, 82;
+    --color_25: 255, 6, 39;
+    --color_26: 251, 251, 251;
+    --color_27: 247, 247, 247;
+    --color_28: 185, 185, 185;
+    --color_29: 124, 124, 124;
+    --color_30: 62, 62, 62;
+    --color_31: 255, 255, 255;
+    --color_32: 255, 255, 255;
+    --color_33: 191, 191, 191;
+    --color_34: 128, 128, 128;
+    --color_35: 64, 64, 64;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
