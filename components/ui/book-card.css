@@ -1,0 +1,49 @@
+.book-card {
+    position: relative;
+    width: 650px;
+    height: 750px;
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg);
+    transition: transform 1s ease;
+    margin: 40px;
+}
+
+.book-card:hover {
+    transform: rotateY(0deg) translateX(20px) scale(1.1); /* 호버 시 크기 확대 */
+    z-index: 20;
+}
+
+.book-card-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transform: translateZ(25px);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.book-card-spine {
+    display: none;
+}
+
+.book-card-pages {
+    display: none;
+}
+
+.book-card-top,
+.book-card-bottom {
+    display: none;
+}
+
+.book-card-top {
+    top: -25px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+}
+
+.book-card-bottom {
+    bottom: -25px;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+}
