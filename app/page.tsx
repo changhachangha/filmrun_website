@@ -562,18 +562,20 @@ export default function FilmRunHomepage() {
             {/* Hero Section */}
             <section
                 id='home'
-                className='relative h-screen flex items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-300'
+                className='relative min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 transition-colors duration-300 py-20 md:py-0'
             >
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between w-full'>
                     {/* Left Column - Text */}
-                    <div className='flex flex-col items-center space-y-4 md:w-2/5 z-10'>
-                        <h1 className='text-8xl font-bold text-red-600'>{t.hero.title}</h1>
-                        <p className='text-2xl text-red-600'>{t.hero.subtitle}</p>
+                    <div className='flex flex-col items-center space-y-4 md:w-2/5 z-10 mb-8 md:mb-0'>
+                        <h1 className='text-4xl sm:text-6xl md:text-8xl font-bold text-red-600 text-center'>
+                            {t.hero.title}
+                        </h1>
+                        <p className='text-lg sm:text-xl md:text-2xl text-red-600 text-center'>{t.hero.subtitle}</p>
                     </div>
 
                     {/* Right Column - Floating BookCard Images */}
                     <div
-                        className='md:w-3/5 h-[800px] flex items-center justify-center space-x-[-200px]'
+                        className='md:w-3/5 h-[300px] xs:h-[350px] sm:h-[500px] md:h-[800px] flex items-center justify-center space-x-[-60px] xs:space-x-[-80px] sm:space-x-[-100px] md:space-x-[-200px] overflow-hidden'
                         style={{ perspective: '1200px' }}
                     >
                         <BookCard imageSrc='/images/Moonlit_Winter_Main.jpg' title='Moonlit Winter' className='z-10' />

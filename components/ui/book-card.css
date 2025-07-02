@@ -8,6 +8,51 @@
     margin: 40px;
 }
 
+/* 극소형 모바일 최적화 (iPhone SE 등) */
+@media (max-width: 480px) {
+    .book-card {
+        width: 200px;
+        height: 240px;
+        margin: 10px;
+        transform: rotateY(-10deg); /* 3D 효과 더욱 단순화 */
+    }
+
+    .book-card:hover {
+        transform: rotateY(0deg) translateX(5px) scale(1.03); /* 최소한의 확대 */
+        z-index: 20;
+    }
+}
+
+/* 일반 모바일 최적화 */
+@media (min-width: 481px) and (max-width: 768px) {
+    .book-card {
+        width: 280px;
+        height: 320px;
+        margin: 20px;
+        transform: rotateY(-15deg); /* 3D 효과 단순화 */
+    }
+
+    .book-card:hover {
+        transform: rotateY(0deg) translateX(10px) scale(1.05); /* 모바일에서 작은 확대 */
+        z-index: 20;
+    }
+}
+
+/* 태블릿 최적화 스타일 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .book-card {
+        width: 450px;
+        height: 520px;
+        margin: 30px;
+        transform: rotateY(-20deg);
+    }
+
+    .book-card:hover {
+        transform: rotateY(0deg) translateX(15px) scale(1.08);
+        z-index: 20;
+    }
+}
+
 .book-card:hover {
     transform: rotateY(0deg) translateX(20px) scale(1.1); /* 호버 시 크기 확대 */
     z-index: 20;
